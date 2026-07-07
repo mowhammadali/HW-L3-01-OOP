@@ -25,17 +25,18 @@
 
             if (book == null)
             {
-                Console.WriteLine("This book does not exist in the library");
+                Console.WriteLine("This book does not exist in the library.");
                 return;
             }
 
             if (!book.IsAvailable)
             {
-                Console.WriteLine("This book has already been borrowed");
+                Console.WriteLine("This book has already been borrowed.");
                 return;
             }
 
             book.IsAvailable = false;
+            Console.WriteLine($"The {book.Title} has been borrowed successfully.");
         }
 
         public void ReturnBook(string title)
@@ -45,6 +46,7 @@
             if (book != null)
             {
                 book.IsAvailable = true;
+                Console.WriteLine($"The {book.Title} has been returned successfully.");
             }
         }
     }
