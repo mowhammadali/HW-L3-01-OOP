@@ -5,7 +5,7 @@
         public string Title { get; private set; }
         public string Author { get; private set; }
         public string ISBN { get; private set; }
-        public bool IsAvailable { get; private set; }
+        public bool IsAvailable { get; set; }
 
         public Book (string title, string author, string iSBN)
         {
