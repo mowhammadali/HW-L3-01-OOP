@@ -1,5 +1,6 @@
 ﻿using Tasks.Task1;
 using Tasks.Task2;
+using Tasks.Task3;
 
 class Program
 {
