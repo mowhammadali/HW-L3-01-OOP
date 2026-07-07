@@ -8,5 +8,6 @@ class Program
     {
         BookRunner.Run();
         PersonRunner.Run();
+        ProductRunner.Run();
     }
 }
