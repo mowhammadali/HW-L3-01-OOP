@@ -14,7 +14,7 @@
 
             people.ForEach(person =>
             {
-                person.GetDetails();
+                Console.WriteLine(person.GetDetails());
             });
         }
     }

@@ -11,9 +11,9 @@
             Major = major;
         }
 
-        public override void GetDetails()
+        public override string GetDetails()
         {
-            Console.WriteLine($"Name: {Name}, Age: {Age}, Student ID: {StudentID}, Major: {Major}");
+           return ($"Name: {Name}, Age: {Age}, Student ID: {StudentID}, Major: {Major}");
         }
     }
 }

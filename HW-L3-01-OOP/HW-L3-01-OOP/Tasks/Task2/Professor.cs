@@ -11,9 +11,9 @@
             Subject = subject;
         }
 
-        public override void GetDetails()
+        public override string GetDetails()
         {
-            Console.WriteLine($"Name: {Name}, Age: {Age}, professor ID: {ProfessorId}, Subject: {Subject}");
+           return ($"Name: {Name}, Age: {Age}, professor ID: {ProfessorId}, Subject: {Subject}");
         }
     }
 }

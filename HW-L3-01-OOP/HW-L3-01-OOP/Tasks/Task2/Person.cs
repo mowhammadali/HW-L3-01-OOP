@@ -10,9 +10,9 @@
             Age = age;
         }
 
-        public virtual void GetDetails()
+        public virtual string GetDetails()
         {
-            Console.WriteLine($"Name: {Name}, Age: {Age}");
+            return $"Name: {Name}, Age: {Age}";
         }
     }
 }
