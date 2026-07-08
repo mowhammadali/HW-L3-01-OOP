@@ -11,7 +11,7 @@
     internal class Room : IRoom
     {
         public int RoomNumber { get; private set; }
-        public int _capacity;
+        private int _capacity;
         public int Capacity
         {
             get { return _capacity; }
