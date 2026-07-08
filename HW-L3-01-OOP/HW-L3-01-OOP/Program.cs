@@ -1,6 +1,7 @@
 ﻿using Tasks.Task1;
 using Tasks.Task2;
 using Tasks.Task3;
+using Tasks.Task4;
 
 class Program
 {
@@ -9,5 +10,6 @@ class Program
         BookRunner.Run();
         PersonRunner.Run();
         ProductRunner.Run();
+        HospitalRunner.Run();
     }
 }
