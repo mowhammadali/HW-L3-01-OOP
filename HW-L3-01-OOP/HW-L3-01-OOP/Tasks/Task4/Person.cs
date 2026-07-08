@@ -13,7 +13,7 @@
             NationalId = id;
         }
 
-        public string GetDetails()
+        public virtual string GetDetails()
         {
             return $"Name: {Name}, Age: {Age}, NationalId: {NationalId}";
         }

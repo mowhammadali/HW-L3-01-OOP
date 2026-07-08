@@ -1,12 +1,19 @@
 ﻿namespace Tasks.Task4
 {
-    internal class Doctor : Person
+    interface IDoctor
+    {
+        string DoctorId { get; }
+        string Specialization {  get; }
+        void Diagnose(Patient patient);
+    }
+
+    internal class Doctor : Person , IDoctor
     {
         public string DoctorId { get; private set; }
         public string Specialization { get; private set; }
         private IDiagnosisStrategy _diagnosisStrategy;
 
-        public Doctor(string name, int age, string id, string doctorId, string specialization , IDiagnosisStrategy diagnosisStrategy) : base(name, age, id)
+        public Doctor(string name, int age, string nationalId, string doctorId, string specialization , IDiagnosisStrategy diagnosisStrategy) : base(name, age, nationalId)
         {
             DoctorId = doctorId;
             Specialization = specialization;
