@@ -21,6 +21,12 @@
             doctor3.Diagnose(patient3);
 
             patient2.ShowMedicalHistory();
+
+            Room room1 = new Room(1, 2, new List<Patient> { patient1, patient2 });
+            Room room2 = new Room(2, 3, new List<Patient> { patient3 });
+            Room room3 = new Room(3, 5);
+
+            room2.AssignPatient(patient4);
         }
     }
 }
